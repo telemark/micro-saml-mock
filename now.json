@@ -1,0 +1,15 @@
+{
+  "name": "micro-saml-mock",
+  "aliases": [
+    "feide-mock.service.t-fk.no"
+  ],
+  "type": "npm",
+  "env": {
+    "NODE_ENV": "production",
+    "SAML_YAR_SECRET": "@saml-yar-secret",
+    "SAML_ENCRYPTOR_SECRET": "@saml-encryptor-secret",
+    "SAML_JWT_SECRET": "@saml-jwt-secret",
+    "PAPERTRAIL_HOST": "@tfk-papertrail-host",
+    "PAPERTRAIL_PORT": "@tfk-papertrail-port"
+  }
+}

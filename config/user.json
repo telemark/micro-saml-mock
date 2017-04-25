@@ -1,0 +1,14 @@
+{
+  "cn": "Demo User",
+  "displayName": "Demo User",
+  "uid": "demouser",
+  "sAMAccountName": "demouser",
+  "company": "Sentraladministrasjonen",
+  "department": "Digitaliseringsgruppa",
+  "mail": "demouser@demo.com",
+  "memberOf": [
+    "CN=TFK-TG-MinElevLeder,OU=Tg_Grupper,OU=Grupper,OU=_FellesTFK,OU=TFK,DC=login,DC=top,DC=no",
+    "CN=TFK-TG-MinElev-BAMVS,OU=Tg_Grupper,OU=Grupper,OU=_FellesTFK,OU=TFK,DC=login,DC=top,DC=no",
+    "CN=Lisfjerning,OU=Manuelt,OU=Grupper,OU=TFK,DC=login,DC=top,DC=no"
+    ]
+}
