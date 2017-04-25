@@ -55,18 +55,18 @@
     }
   },
   "devDependencies": {
-    "ava": "0.18.2",
+    "ava": "0.19.1",
     "coveralls": "2.13.0",
     "nsp": "2.6.3",
     "nyc": "10.2.0",
-    "standard": "9.0.2",
-    "test-listen": "1.0.1"
+    "standard": "10.0.2",
+    "test-listen": "1.0.2"
   },
   "dependencies": {
-    "axios": "0.15.3",
-    "jsonwebtoken": "7.3.0",
+    "axios": "0.16.1",
+    "jsonwebtoken": "7.4.0",
     "marked": "0.3.6",
-    "micro": "7.3.0",
+    "micro": "7.3.2",
     "winston": "2.3.1",
     "winston-papertrail": "1.0.4",
     "simple-encryptor": "1.1.0",
