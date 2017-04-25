@@ -45,15 +45,6 @@
     "url": "https://github.com/telemark/micro-saml-mock/issues"
   },
   "homepage": "https://github.com/telemark/micro-saml-mock",
-  "now": {
-    "alias": [
-      "auth.demo.t-fk.win"
-    ],
-    "type": "npm",
-    "env": {
-      "NODE_ENV": "production"
-    }
-  },
   "devDependencies": {
     "ava": "0.18.2",
     "coveralls": "2.13.0",
