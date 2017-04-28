@@ -24,7 +24,8 @@ module.exports = async (request, response) => {
     response.end()
   } else if (pathname === '/logout') {
     logger('info', `Client logged out`)
-    response.writeHead(302, { Location: 'www.telemark.no' })
+    response.writeHead(302, { Location: 'https://www.telemark.no' })
+    response.end()
   } else {
     response.setHeader('Content-Type', 'text/html')
     const readme = readFileSync('./README.md', 'utf-8')
