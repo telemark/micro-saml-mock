@@ -9,8 +9,8 @@ const saveSession = require('./lib/save-session')
 const logger = require('./lib/logger')
 
 const mockData = {
-  displayName: 'demo-user',
-  sAMAccountName: 'demo'
+  displayName: 'Demo User',
+  sAMAccountName: 'demouser'
 }
 
 module.exports = async (request, response) => {

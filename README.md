@@ -25,7 +25,6 @@ SAML_JWT_SECRET=Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go
 ### GET ```/logout```
 
 - redirects user to ```<logoutUrl>```
-- successful lookup of user redirects to ```origin?jwt=<jwt>```
 
 ## License
 

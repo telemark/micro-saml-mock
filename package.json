@@ -11,7 +11,7 @@
   },
   "contributors": [
     {
-      "name": "Jonas Enge",
+      "name": "Geir Gåsodden",
       "email": "geir.gasodden@pythonia.no",
       "url": "https://github.com/zrrrzzt"
     }
@@ -35,6 +35,7 @@
     "micro",
     "mock",
     "auth",
+    "saml",
     "Telemark fylkeskommune"
   ],
   "repository": {
