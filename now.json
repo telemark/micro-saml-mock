@@ -1,7 +1,7 @@
 {
   "name": "micro-saml-mock",
   "alias": [
-    "feide-mock.service.t-fk.no"
+    "feide.tjeneste.win"
   ],
   "type": "npm",
   "env": {
