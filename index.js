@@ -10,7 +10,8 @@ const logger = require('./lib/logger')
 
 const mockData = {
   displayName: 'Demo User',
-  sAMAccountName: 'demouser'
+  sAMAccountName: 'demouser',
+  email: 'demo@t-fk.no'
 }
 
 module.exports = async (request, response) => {
