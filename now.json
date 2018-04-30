@@ -1,14 +1,14 @@
 {
   "name": "micro-saml-mock",
-  "aliases": [
-    "feide-mock.service.t-fk.no"
+  "alias": [
+    "feide.tjeneste.win"
   ],
   "type": "npm",
   "env": {
     "NODE_ENV": "production",
-    "SAML_YAR_SECRET": "@saml-yar-secret",
-    "SAML_ENCRYPTOR_SECRET": "@saml-encryptor-secret",
-    "SAML_JWT_SECRET": "@saml-jwt-secret",
+    "SAML_YAR_SECRET": "Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go",
+    "SAML_ENCRYPTOR_SECRET": "Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go",
+    "SAML_JWT_SECRET": "Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go",
     "PAPERTRAIL_HOST": "@tfk-papertrail-host",
     "PAPERTRAIL_PORT": "@tfk-papertrail-port"
   }

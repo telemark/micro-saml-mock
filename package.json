@@ -1,7 +1,7 @@
 {
   "name": "micro-saml-mock",
   "description": "saml auth mock microservice",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -11,14 +11,14 @@
   },
   "contributors": [
     {
-      "name": "Jonas Enge",
+      "name": "Geir Gåsodden",
       "email": "geir.gasodden@pythonia.no",
       "url": "https://github.com/zrrrzzt"
     }
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=7.9.0"
+    "node": ">=8.6.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -28,6 +28,7 @@
     "setup": "npm install",
     "standard-fix": "standard --fix",
     "start": "micro",
+    "dev": "micro-dev",
     "now-deploy": "npm test && now --npm && now alias"
   },
   "keywords": [
@@ -35,6 +36,7 @@
     "micro",
     "mock",
     "auth",
+    "saml",
     "Telemark fylkeskommune"
   ],
   "repository": {
@@ -45,31 +47,23 @@
     "url": "https://github.com/telemark/micro-saml-mock/issues"
   },
   "homepage": "https://github.com/telemark/micro-saml-mock",
-  "now": {
-    "alias": [
-      "auth.demo.t-fk.win"
-    ],
-    "type": "npm",
-    "env": {
-      "NODE_ENV": "production"
-    }
-  },
   "devDependencies": {
-    "ava": "0.19.1",
-    "coveralls": "2.13.0",
-    "nsp": "2.6.3",
-    "nyc": "10.2.0",
-    "standard": "10.0.2",
+    "ava": "0.22.0",
+    "coveralls": "3.0.0",
+    "micro-dev": "1.2.3",
+    "nsp": "2.8.1",
+    "nyc": "11.2.1",
+    "standard": "10.0.3",
     "test-listen": "1.0.2"
   },
   "dependencies": {
-    "axios": "0.16.1",
-    "jsonwebtoken": "7.4.0",
-    "marked": "0.3.6",
-    "micro": "7.3.2",
-    "winston": "2.3.1",
-    "winston-papertrail": "1.0.4",
+    "axios": "0.16.2",
+    "jsonwebtoken": "8.0.1",
+    "markdown-it": "8.4.0",
+    "micro": "9.0.0",
     "simple-encryptor": "1.1.0",
-    "urlencoded-body-parser": "2.0.1"
+    "urlencoded-body-parser": "2.0.1",
+    "winston": "2.4.0",
+    "winston-papertrail": "1.0.5"
   }
 }

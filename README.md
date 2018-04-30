@@ -9,9 +9,11 @@ Mocks the auth service
 ## config docker.env
 
 ```bash
-JWT_SECRET=Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go
-ENCRYPTOR_SECRET=Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go
-SESSION_STORAGE_URL=https://tmp.storage.micro.t-fk.no
+NODE_ENV=production
+SAML_YAR_SECRET=Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go
+SAML_ENCRYPTOR_SECRET=Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go
+SAML_JWT_SECRET=Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go
+
 ```
 
 ## API
@@ -23,7 +25,6 @@ SESSION_STORAGE_URL=https://tmp.storage.micro.t-fk.no
 ### GET ```/logout```
 
 - redirects user to ```<logoutUrl>```
-- successful lookup of user redirects to ```origin?jwt=<jwt>```
 
 ## License
 

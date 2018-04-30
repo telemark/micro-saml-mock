@@ -1,7 +1,7 @@
 'use strict'
 
 const readFileSync = require('fs').readFileSync
-const marked = require('marked')
+const md = require('markdown-it')()
 const { parse } = require('url')
 const { send } = require('micro')
 const generateJwt = require('./lib/generate-jwt')
@@ -9,8 +9,9 @@ const saveSession = require('./lib/save-session')
 const logger = require('./lib/logger')
 
 const mockData = {
-  displayName: 'demo-user',
-  sAMAccountName: 'demo'
+  displayName: 'Demo User',
+  sAMAccountName: 'demouser',
+  email: 'demo@t-fk.no'
 }
 
 module.exports = async (request, response) => {
@@ -24,11 +25,11 @@ module.exports = async (request, response) => {
     response.end()
   } else if (pathname === '/logout') {
     logger('info', `Client logged out`)
-    response.writeHead(302, { Location: 'www.telemark.no' })
+    response.writeHead(302, { Location: 'https://www.telemark.no' })
+    response.end()
   } else {
     response.setHeader('Content-Type', 'text/html')
     const readme = readFileSync('./README.md', 'utf-8')
-    const html = marked(readme)
-    send(response, 200, html)
+    send(response, 200, md.render(readme))
   }
 }
