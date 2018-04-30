@@ -30,4 +30,4 @@ SAML_JWT_SECRET=Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go
 
 [MIT](LICENSE)
 
-![alt text](https://robots.kebabstudios.party/micro-saml-mock.png "Robohash image of micro-saml-mock")
+![Robohash image of micro-saml-mock](https://robots.kebabstudios.party/micro-saml-mock.png "Robohash image of micro-saml-mock")
