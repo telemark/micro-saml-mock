@@ -1,5 +1,5 @@
 # Setting the base to nodejs 10.0.0
-FROM node:10.4.0-alpine@sha256:00f2d006d9ddaedd8d4ec87d5b25d8d73ac724c923ca59b471ffc11062b2f1f8
+FROM node:10.5.0-alpine@sha256:21b58de0d309e8b793fb508e610762e522074a3bd5bef6f3ff74b7bade338aec
 
 # Bundle app source
 COPY . /src
