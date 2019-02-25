@@ -15,10 +15,10 @@ const mockData = {
 }
 
 module.exports = async (request, response) => {
-  const {pathname, query} = await parse(request.url, true)
+  const { pathname, query } = await parse(request.url, true)
   if (pathname === '/login' && query.origin) {
     const session = await saveSession(mockData)
-    const jwt = generateJwt(Object.assign({sessionKey: session}, mockData))
+    const jwt = generateJwt(Object.assign({ sessionKey: session }, mockData))
     const url = `${query.origin}?jwt=${jwt}`
     logger('info', `Client redirected to ${url}`)
     response.writeHead(302, { Location: url })
