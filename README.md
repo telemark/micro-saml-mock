@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/telemark/micro-saml-mock.svg?branch=master)](https://travis-ci.org/telemark/micro-saml-mock)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/micro-saml-mock.svg)](https://greenkeeper.io/)
 
 # micro-saml-mock
 
@@ -29,5 +28,3 @@ SAML_JWT_SECRET=Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of micro-saml-mock](https://robots.kebabstudios.party/micro-saml-mock.png "Robohash image of micro-saml-mock")
