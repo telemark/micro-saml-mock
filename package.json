@@ -50,7 +50,7 @@
   "homepage": "https://github.com/telemark/micro-saml-mock#readme",
   "devDependencies": {
     "ava": "1.2.1",
-    "coveralls": "3.0.2",
+    "coveralls": "3.0.3",
     "micro-dev": "3.0.0",
     "nsp": "3.2.1",
     "nyc": "13.3.0",
