@@ -1,6 +1,4 @@
-'use strict'
-
-const readFileSync = require('fs').readFileSync
+const { readFileSync } = require('fs')
 const md = require('markdown-it')()
 const { parse } = require('url')
 const { send } = require('micro')
@@ -11,7 +9,7 @@ const logger = require('./lib/logger')
 const mockData = {
   displayName: 'Demo User',
   sAMAccountName: 'demouser',
-  email: 'demo@t-fk.no'
+  email: 'post.opplaring@t-fk.no'
 }
 
 module.exports = async (request, response) => {
@@ -29,7 +27,7 @@ module.exports = async (request, response) => {
     response.end()
   } else {
     response.setHeader('Content-Type', 'text/html')
-    const readme = readFileSync('./README.md', 'utf-8')
+    const readme = readFileSync(`${__dirname}/README.md`, 'utf-8')
     send(response, 200, md.render(readme))
   }
 }

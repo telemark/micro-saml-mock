@@ -1,9 +1,9 @@
 {
+  "version": 2,
   "name": "micro-saml-mock",
   "alias": [
     "feide.tjeneste.win"
   ],
-  "type": "npm",
   "env": {
     "NODE_ENV": "production",
     "SAML_YAR_SECRET": "Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go",
@@ -12,7 +12,10 @@
     "PAPERTRAIL_HOST": "@tfk-papertrail-host",
     "PAPERTRAIL_PORT": "@tfk-papertrail-port"
   },
-  "enigines": {
-    "node": "10.0.0"
-  }
+  "builds": [
+    { "src": "/index.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.js" }
+  ]
 }
