@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "axios": "0.18.0",
-    "jsonwebtoken": "8.5.0",
+    "jsonwebtoken": "8.5.1",
     "markdown-it": "8.4.2",
     "micro": "9.3.3",
     "simple-encryptor": "2.0.0",
